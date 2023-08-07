@@ -18,7 +18,7 @@ export default {
 	input: Object.fromEntries(files),
 	output: [
 		{
-			dir: 'dist',
+			dir: 'lib',
 			format: 'cjs',
 		},
 	],
