@@ -2,8 +2,8 @@
   "name": "@wezom/cli-log",
   "version": "0.1.4",
   "description": "CLI Log Utility",
-  "main": "lib/CliLog.mjs",
-  "types": "lib/CliLog.d.mts",
+  "main": "lib/index.mjs",
+  "types": "lib/index.d.mts",
   "files": [
     "lib"
   ],
