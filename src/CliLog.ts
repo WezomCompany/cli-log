@@ -1,9 +1,9 @@
-import { default as _ } from 'chalk';
+import _ from 'chalk';
 import fromCWD from 'from-cwd';
 import path from 'path';
 
 export class CliLog {
-	protected _source = (output: string, root = '') => {
+	protected _source = (output: string, root = ''): string => {
 		output = path.isAbsolute(output)
 			? path.relative(fromCWD(root), path.normalize(output))
 			: output;
