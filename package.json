@@ -1,6 +1,6 @@
 {
   "name": "@wezom/cli-log",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "CLI Log Utility",
   "main": "lib/index.mjs",
   "types": "lib/index.d.mts",
