@@ -1,8 +1,8 @@
 import terser from '@rollup/plugin-terser';
 import typescript from '@rollup/plugin-typescript';
-import { glob } from 'glob';
+import {glob} from 'glob';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import {fileURLToPath} from 'node:url';
 
 const files = glob
 	.sync('src/*.ts')
@@ -23,5 +23,5 @@ export default {
 		},
 	],
 	plugins: [typescript(), terser()],
-	external: ['negotiator', '@formatjs/intl-localematcher'],
+	external: ['chalk', 'from-cwd', 'path'],
 };

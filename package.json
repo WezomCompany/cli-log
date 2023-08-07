@@ -1,14 +1,13 @@
 {
-  "name": "{#PACKAGE_NAME#}",
-  "version": "{#PACKAGE_VERSION#}",
-  "description": "{#PACKAGE_DESCRIPTION#}",
+  "name": "@wezom/cli-log",
+  "version": "0.1.0",
+  "description": "CLI Log Utility",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
   "scripts": {
-    "init": "node src/init/index.mjs && pnpm remove cp-cli from-cwd inquirer && del-cli src/init",
     "build": "rollup --config rollup.config.mjs",
     "prebuild": "del-cli dist",
     "postbuild": "del-cli dist/**/__specs__",
@@ -22,15 +21,15 @@
     "ci-test": "pnpm run lint && pnpm run test"
   },
   "keywords": [],
-  "author": "{#PACKAGE_AUTHOR_NAME#} <{#PACKAGE_AUTHOR_EMAIL#}>",
+  "author": "OlehDutchenko <dutchenko.o.dev@gmail.com>",
   "license": "BSD 3-Clause License",
   "bugs": {
-    "url": "{#REPO_URL#}/issues"
+    "url": "https://github.com/WezomCompany/cli-log/issues"
   },
-  "homepage": "{#REPO_URL#}#readme",
+  "homepage": "https://github.com/WezomCompany/cli-log#readme",
   "repository": {
     "type": "git",
-    "url": "git+{#REPO_URL#}.git"
+    "url": "git+https://github.com/WezomCompany/cli-log.git"
   },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.3",
@@ -38,18 +37,19 @@
     "@vitest/coverage-istanbul": "^0.34.1",
     "@wezom/eslint-config": "^11.0.5",
     "@wezom/eslint-config-ts": "^11.0.5",
-    "cp-cli": "^2.0.0",
     "del-cli": "^5.0.0",
     "eslint": "^8.46.0",
     "eslint-config-prettier": "^8.9.0",
-    "from-cwd": "^1.0.1",
     "glob": "^10.3.3",
-    "inquirer": "^8.2.6",
     "istanbul-badges-readme": "^1.8.5",
     "jsdom": "^22.1.0",
     "prettier": "^3.0.0",
     "rollup": "^3.27.0",
     "typescript": "^5.1.6",
     "vitest": "^0.34.1"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "from-cwd": "^1.0.1"
   }
 }
