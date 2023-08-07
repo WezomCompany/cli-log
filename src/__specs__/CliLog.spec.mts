@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { CliLog } from '../CliLog.js';
+import { CliLog } from '../CliLog.mjs';
 
 describe('CliLog', () => {
 	let loggedMessage = '';
